@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>-_-</title>
+    <link rel="stylesheet" href="Somando dois números.css">
+</head>
+<body>
+<div class="b1">
+<div class="b2">
+
+    <h1> Somando dois números</h1>
+
+    <input type="number" id="pn" placeholder="Digite um número"> <br>
+    <input type="number" id="sn" placeholder="Digite um número"> <br>
+    <button type="submit" id="calcular" onclick="calcular()"> Calcular</button>
+
+    <h3 id="valor"> </h3>
+</div>
+</div>
+<script>
+    function calcular() {
+        var numero1 = parseFloat(document.getElementById('pn').value);
+        var numero2 = parseFloat(document.getElementById('sn').value);
+
+        var calculo = numero1 + numero2
+
+        document.getElementById('valor').innerHTML = "O resultado da soma é: " + calculo;
+
+    }
+
+
+
+
+
+</script>
+    
+</body>
+</html>
